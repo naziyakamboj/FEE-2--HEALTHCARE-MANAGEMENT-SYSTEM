@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .service_container {
+    background-color: #f1f1f1;
+    padding: 50px 0;
+}
+
+.service_content h2 {
+    font-size: 35px;
+    color: #38372f;
+}
+
+.service_content p {
+    font-size: 25px;
+    color: #4b552a;
+    margin-top: 10px;
+}
+
+.service_btn {
+    margin-top: 20px;
+    background-color: #389aa7;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.service_btn:hover {
+    background-color: #277b8e;
+}
+
+.service_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+    font-size: 25px;
+}
+
+.service_card {
+    background-color: #d1d6d9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(198, 179, 179, 0.1);
+    text-align: center;
+}
+
+.service_card h4 {
+    margin-top: 10px;
+    color: #445e7a;
+}
+
+.service_card p {
+    margin-top: 10px;
+    color: #4d5f55;
+}
+
+.service_card a {
+    text-decoration: none;
+    color: #576796;
+    font-weight: 500;
+    margin-top: 15px;
+    display: inline-block;
+}
+
+.service_card a:hover {
+    text-decoration: underline;
+}
+.section__header p{
+    font-size: 20px;
+}
+
+    </style>
+</head>
+<body>
+    <section class="section" id="service">
+        <div class="service">
+            <div class ="service_content">
+                <h2>Our Special Service</h2>
+                <p>
+                    Our commitment goes beyond medical care. We aim to provide exceptional service tailored to your unique needs.
+                </p>
+            </div>
+            <button class="service_btn">Ask a Service</button>
+        </div>
+        <div class="service_grid">
+            <div class="service_card">
+                <span><i class="Test"></i></span>
+                <h4>Laboratory Test</h4>
+                <p>Accurate Diagnostics, Swift Results: Experience top-notch Laboratory
+                    Testing at our facility.</p>
+                    <a href="#">Learn More</a>
+            </div>
+            <div class="service_card">
+                <h4>Health check</h4>
+                <p>Our thorough assessments and expert evaluations help you stay
+                    proactive about your health.</p>
+                    <a href="#">Learn More</a>
+            </div>
+            <div class="service_card">
+                <span><i class="ri-hospital-line"></i></span>
+                <h4>General Dentistry</h4>
+                <p>Trust us with your general dentistry needs; our skilled team ensures your comfort and oral health. Experience gentle, comprehensive care tailored to you.</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

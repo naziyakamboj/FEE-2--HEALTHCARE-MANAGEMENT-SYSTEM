@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body, h4, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #baccc6; 
+}
+
+.footer {
+    background-color: #ffffff; 
+    padding: 20px 0; 
+}
+
+.section_container {
+    max-width:650px; 
+    margin: auto;
+    padding: 0 20px; 
+}
+
+.footer_grid {
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 100px; 
+}
+
+.footer_logo {
+    grid-column: span 1; 
+}
+
+.logo {
+    font-size: 50px;
+    font-weight: bold; 
+    color: #303e4d; 
+}
+
+.footer_logo p {
+    margin-top: 10px;
+    color: #485859;
+    font-size: 30px;
+}
+
+.footer_links {
+    grid-column: span 1;
+    font-size: 40px; 
+}
+
+.footer_links h4 {
+    margin-bottom: 10px; 
+    color: #2c3e50;
+    font-size: 40px; 
+}
+
+.footer_links ul {
+    list-style: none; 
+    padding: 0; 
+}
+
+.footer_links a {
+    text-decoration: none; 
+    color: #4d697c; 
+    margin-bottom: 5px; 
+    display: block;
+    font-size: 30px; 
+}
+
+.footer_links a:hover {
+    text-decoration: underline; 
+}
+
+.footer_contact {
+    grid-column: span 1; 
+}
+
+.footer_contact h4 {
+    margin-bottom: 20px; 
+    color: #354554;
+    font-size: 50px;
+}
+
+.footer_contact p {
+    color: #485859;
+    font-size: 30px;
+}
+
+.footer_newsletter {
+    grid-column: span 1;
+    font-size: 30px;
+}
+
+.footer_newsletter h4 {
+    margin-bottom: 10px;
+    color: #354554; 
+    font-size: 50px;
+}
+.footer_newsletter p {
+    margin-bottom: 10px; 
+    color: #4a5864; 
+    font-size: 30px;
+}
+
+.footer_newsletter form {
+    display: flex; 
+    margin-top: 10px; 
+}
+
+.footer_newsletter input[type="email"] {
+    flex: 1; 
+    padding: 10px; 
+    border: 1px solid #bdc3c7; 
+    border-radius: 5px 0 0 5px; 
+}
+
+.footer_newsletter .btn {
+    padding: 20px; 
+    background-color: #2980b9; 
+    color: white; 
+    border: none; 
+    border-radius: 0 5px 5px 0;
+    cursor: pointer; 
+}
+
+.footer_newsletter .btn:hover {
+    background-color: #3498db; 
+}
+
+.footer_bottom {
+    font-size:30px;
+    text-align: center; 
+    padding: 10px 0; 
+    color: #181727dc; 
+}
+
+@media (max-width: 600px) {
+    .logo {
+        font-size: 20px;
+    }
+
+    .nav_links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav_links .link {
+        margin: 10px 0;
+    }
+
+    .header_content h1 {
+        font-size: 1.8em;
+    }
+
+    .header_content p {
+        font-size: 0.9em;
+    }
+
+    .header_form {
+        padding: 20px;
+    }
+
+    .service_content h2 {
+        font-size: 1.8em;
+    }
+
+    .service_content p {
+        font-size: 0.9em;
+    }
+
+    .footer_grid {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1024px) {
+    .nav_links {
+        gap: 15px;
+    }
+
+    .header_content h1 {
+        font-size: 2.2em;
+    }
+
+    .header_content p {
+        font-size: 1em;
+    }
+
+    .service_content h2 {
+        font-size: 2em;
+    }
+
+    .service_content p {
+        font-size: 1em;
+    }
+}
+</style>
+<body>
+    <footer class="footer"></footer>
+        <div class="section_container">
+            <div class="footer_grid">
+                <div class="footer_logo">
+                    <div class="logo">Care<span>Fusion</span></div>
+                    <p>Your health, our priority. At CareFusion, we are committed to providing top-tier healthcare services and ensuring your well-being at every step of the way.</p>
+                </div>
+                <div class="footer_links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <a href="#Home">Home</a>
+                        <a href="#services">Services</a>
+                        <a href="#about">About</a>
+                        <a href="#specialists">specialists</a>
+                    </ul>
+                </div>
+                <br>
+                <div class="footer_contact">
+                    <h4>Contact Us</h4>
+                    <p>123 Health Street, Wellness City, Medical State, 56789</p>
+                    <p>Email: info@carefusion.com</p>
+                    <p>Phone: +123 456 7890</p>
+                </div>
+                <div class="footer_newsletter">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to our newsletter for the latest updates and healthcare tips.</p>
+                    <form>
+                        <input type="email" placeholder="Enter your email">
+                        <button class="btn">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <p>&copy; 2024 CareFusion. All rights reserved.</p>
+        </div>
+    </footer>
+</html>
+</body>
+</html>

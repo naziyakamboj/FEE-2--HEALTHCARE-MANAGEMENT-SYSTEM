@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .doctors__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .doctors__card {
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align:center;
+  }
+  
+  .doctors__card__image img {
+    width: 50%;
+    height: 150px;
+  }
+  
+  .doctors__card h4 {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #333;
+  }
+  
+  .doctors__card p {
+    margin: 5px 0 15px;
+    color: #666;
+  }
+  
+  .doctors__socials {
+    margin-top: 10px;
+  }
+    </style>
+</head>
+<body>
+    <section class="special_container" id="pages"></section>
+        <div class="doctors__header">
+          <div class="doctors__header__content">
+            <h2 class="section__header">Our Special Doctors</h2>
+            <p>
+              We take pride in our exceptional team of doctors, each a specialist
+              in their respective fields.
+            </p>
+          </div>
+        </div>
+        <div class="doctors__grid">
+          <div class="doctors__card">
+            <div class="doctors">
+              <img src="https://doximity-res.cloudinary.com/images/f_auto,q_auto,t_profile_photo_320x320/r8pi4ymxgpozqhsrw9rn/aditi-sethi-brown-md-asheville-nc.jpg" alt="doctor" Height=200px/>
+              <div class="doctors__socials">
+              </div>
+            </div>
+            <h4>Dr. Aditi Sethi</h4>
+            <p>Cardiologist</p>
+          </div>
+          <div class="doctors__card">
+            <div class="doctors__card__image">
+              <img src="https://www.kauveryhospital.com/wp-content/uploads/2023/04/Dr-Pritika-chary2023-01-04-12_11_29pm.jpg" alt="doctor" Height=300px/>
+              <div class="doctors__socials">
+              </div>
+            </div>
+            <h4>Dr. Anita Goel</h4>
+            <p>Neurosurgeon</p>
+          </div>
+          <div class="doctors__card">
+            <div class="doctors__card__image">
+              <img src="https://www.enrichclinic.com.au/wp-content/uploads/2021/06/doctor-performing-facial-injections.jpg" alt="doctor" Height=200px/>
+              <div class="doctors__socials">
+              </div>
+            </div>
+            <h4>Dr. Rashmi Shetty</h4>
+            <p>Dermatologist</p>
+          </div>
+          <div class="doctors__card">
+            <div class="doctors__card__image">
+              <img src="https://zoiclinics.com/img/dentistry-intro-icon.jpg" alt="doctor" Height=200px/>
+              <div class="doctors__socials">
+              </div>
+            </div>
+            <h4>Dr. Shalini Sharma</h4>
+            <p>Dentist</p>
+          </div>
+        </div>
+      </section>
+</body>
+</html>
